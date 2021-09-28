@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#rokBanner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.loginContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 100%;
+  background-color: red;
+  border: black solid 2px;
+}
+
+.loginContainer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.loginContainer ul li {
+  padding: 7px 60px;
+}
+.loginContainer ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: red;
+  border: black solid 2px;
+  border-top: none;
+}
+
+#menuIcon {
+  height: 40px;
+  transform: rotate(0deg);
+  transition: transform 0.5s linear;
+}
+#menuIcon270 {
+  height: 40px;
+  transform: rotate(270deg);
+  transition: transform 0.5s linear;
+}
+nav {
+  flex: 1 1 80%;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  padding: 9px 4px;
+  border-bottom: 1px solid black;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  display: block;
+  margin: 5px;
+}
+
+.contentCreators {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.contentCreators > div {
+  flex: 1 1 50%;
+}
+.contentCreators img {
+  width: 100%;
+}
+
+footer {
+  background: red;
+  margin-top: 20px;
+  padding: 20px;
+}
+footer > div > p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Calculator.html form css */
+
+.calculatorForms {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calculatorForms > div {
+  flex: 1 1 auto;
+  margin: 2.5px 5px;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+.resultsContainer > p {
+  border: 1px black solid;
+}
+
+/* talentPreviews.php css */
+
+.presentationContainer {
+  display: flex;
+}
+.scrollMenuContainer {
+  flex: 20%;
+}
+.scrollMenuContainer > ul {
+  height: 200px;
+  width: 150px;
+  overflow: hidden;
+  overflow-y: scroll;
+  list-style: none;
+  padding-left: 5px;
+}
+.scrollMenuContainer > ul > li {
+  position: relative;
+}
+.scrollMenuContainer > ul > li > a {
+  position: absolute;
+  padding-top: 10px;
+  text-decoration: none;
+  color: red;
+}
+.scrollMenuContainer > ul > li > img {
+  width: 30px;
+}
+.slideShowContainer {
+  box-sizing: border-box;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slidesContainer {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+
+.mySlides > img {
+  width: 100%;
+}
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.captionText {
+  color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.imageNumber {
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  color: red;
+  top: 0;
+}

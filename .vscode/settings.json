@@ -1,0 +1,4 @@
+{
+    "editor.formatOnSave": true,
+    "phpfmt.detect_indent": true
+}
